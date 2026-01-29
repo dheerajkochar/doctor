@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- CSS Files -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="animations.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%231e5a96'>🦷</text></svg>">
@@ -48,22 +48,15 @@
 
     <!-- Hero Section -->
     <section class="hero" id="about">
+        <img src="images/hero-clinic.jpg" alt="Modern Dental Clinic in Jodhpur" class="hero-background">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title">Your Smile, Our Priority</h1>
+            <h1 class="hero-title">We Give You Confidence To Smile!</h1>
             <p class="hero-subtitle">Award-Winning Dental Care in Jodhpur</p>
             <p class="hero-description">Experience world-class dental treatments with our expert team using the latest technology</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary">Book Appointment</a>
                 <a href="#services" class="btn btn-secondary">Explore Services</a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <div class="hero-placeholder">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="100" cy="100" r="95" fill="none" stroke="#e8f4f8" stroke-width="2"/>
-                    <path d="M 100 60 Q 120 80 120 100 Q 120 120 100 140 Q 80 120 80 100 Q 80 80 100 60" fill="#1e5a96" opacity="0.2"/>
-                    <circle cx="100" cy="100" r="40" fill="none" stroke="#1e5a96" stroke-width="1.5"/>
-                </svg>
             </div>
         </div>
     </section>
@@ -74,6 +67,13 @@
             <div class="section-header">
                 <h2>About Smile Dental Clinic</h2>
                 <p>Leading dental care provider in Jodhpur for over 15 years</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to Smile Dental Clinic, Jodhpur's premier destination for comprehensive dental care. With over 15 years of excellence, we've transformed thousands of smiles using cutting-edge technology and compassionate treatment approaches.</p>
+                    <p>Our team of highly qualified dental professionals is committed to providing personalized care tailored to each patient's unique needs. We believe in creating a comfortable, welcoming environment where dental anxiety is minimized and excellent results are guaranteed.</p>
+                </div>
+                <img src="images/clinic-interior.jpg" alt="Professional Dental Clinic Interior" class="about-image">
             </div>
             <div class="about-grid">
                 <div class="about-card fade-in">
@@ -148,45 +148,57 @@
             </div>
             <div class="services-grid">
                 <div class="service-card fade-in-up">
-                    <div class="service-icon">🦷</div>
-                    <h3>Dental Implants</h3>
-                    <p>Premium titanium implants that look and feel like natural teeth, with over 95% success rate</p>
-                    <a href="#treatment" class="service-link">Learn More →</a>
+                    <img src="images/service-implant.jpg" alt="Dental Implant Procedure" class="service-image">
+                    <div class="service-content">
+                        <h3>Dental Implants</h3>
+                        <p>Premium titanium implants that look and feel like natural teeth, with over 95% success rate</p>
+                        <a href="#treatment" class="service-link">Learn More →</a>
+                    </div>
                 </div>
 
                 <div class="service-card fade-in-up">
-                    <div class="service-icon">💪</div>
-                    <h3>Wisdom Tooth Extraction</h3>
-                    <p>Safe and painless extraction with minimal post-operative discomfort using latest techniques</p>
-                    <a href="#treatment" class="service-link">Learn More →</a>
+                    <img src="images/service-crown.jpg" alt="Wisdom Tooth Extraction" class="service-image">
+                    <div class="service-content">
+                        <h3>Wisdom Tooth Extraction</h3>
+                        <p>Safe and painless extraction with minimal post-operative discomfort using latest techniques</p>
+                        <a href="#treatment" class="service-link">Learn More →</a>
+                    </div>
                 </div>
 
                 <div class="service-card fade-in-up">
-                    <div class="service-icon">✨</div>
-                    <h3>Composite Bonding</h3>
-                    <p>Restore and enhance your smile with tooth-colored composite materials for a natural look</p>
-                    <a href="#treatment" class="service-link">Learn More →</a>
+                    <img src="images/service-bonding.jpg" alt="Composite Bonding Treatment" class="service-image">
+                    <div class="service-content">
+                        <h3>Composite Bonding</h3>
+                        <p>Restore and enhance your smile with tooth-colored composite materials for a natural look</p>
+                        <a href="#treatment" class="service-link">Learn More →</a>
+                    </div>
                 </div>
 
                 <div class="service-card fade-in-up">
-                    <div class="service-icon">👑</div>
-                    <h3>Crown & Bridge</h3>
-                    <p>Durable and aesthetically pleasing crowns and bridges to restore missing or damaged teeth</p>
-                    <a href="#treatment" class="service-link">Learn More →</a>
+                    <img src="images/service-crown.jpg" alt="Crown and Bridge Restoration" class="service-image">
+                    <div class="service-content">
+                        <h3>Crown & Bridge</h3>
+                        <p>Durable and aesthetically pleasing crowns and bridges to restore missing or damaged teeth</p>
+                        <a href="#treatment" class="service-link">Learn More →</a>
+                    </div>
                 </div>
 
                 <div class="service-card fade-in-up">
-                    <div class="service-icon">😊</div>
-                    <h3>Invisible Aligners</h3>
-                    <p>Clear braces that straighten teeth invisibly - comfortable, removable, and effective</p>
-                    <a href="#treatment" class="service-link">Learn More →</a>
+                    <img src="images/service-braces.jpg" alt="Clear Invisible Braces" class="service-image">
+                    <div class="service-content">
+                        <h3>Invisible Aligners</h3>
+                        <p>Clear braces that straighten teeth invisibly - comfortable, removable, and effective</p>
+                        <a href="#treatment" class="service-link">Learn More →</a>
+                    </div>
                 </div>
 
                 <div class="service-card fade-in-up">
-                    <div class="service-icon">🌟</div>
-                    <h3>Cosmetic Dentistry</h3>
-                    <p>Professional teeth whitening and cosmetic treatments for a brighter, more beautiful smile</p>
-                    <a href="#treatment" class="service-link">Learn More →</a>
+                    <img src="images/service-bonding.jpg" alt="Cosmetic Dentistry Results" class="service-image">
+                    <div class="service-content">
+                        <h3>Cosmetic Dentistry</h3>
+                        <p>Professional teeth whitening and cosmetic treatments for a brighter, more beautiful smile</p>
+                        <a href="#treatment" class="service-link">Learn More →</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -236,17 +248,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="treatment-image">
-                        <div class="process-placeholder">
-                            <div class="implant-diagram">
-                                <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="80" y="50" width="40" height="60" fill="#fff5e6" stroke="#1e5a96" stroke-width="2"/>
-                                    <rect x="70" y="110" width="60" height="15" fill="#c0c0c0" stroke="#1e5a96" stroke-width="1.5"/>
-                                    <path d="M 70 125 L 60 180 Q 100 200 140 180 L 130 125" fill="#4a90a4" stroke="#1e5a96" stroke-width="1.5"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="images/service-implant.jpg" alt="Dental Implant Procedure" class="treatment-image">
                 </div>
             </div>
 
@@ -278,17 +280,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="treatment-image">
-                        <div class="process-placeholder">
-                            <div class="procedure-diagram">
-                                <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="100" cy="100" r="50" fill="none" stroke="#e8f4f8" stroke-width="3"/>
-                                    <path d="M 100 50 L 100 150 M 50 100 L 150 100" stroke="#1e5a96" stroke-width="2"/>
-                                    <circle cx="100" cy="100" r="30" fill="#e8f4f8" stroke="#1e5a96" stroke-width="2"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="images/clinic-interior.jpg" alt="Modern Dental Treatment Room" class="treatment-image">
                 </div>
             </div>
 
@@ -320,17 +312,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="treatment-image">
-                        <div class="process-placeholder">
-                            <div class="bonding-diagram">
-                                <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="60" y="80" width="80" height="100" rx="5" fill="#fffacd" stroke="#1e5a96" stroke-width="2"/>
-                                    <path d="M 70 100 Q 100 85 130 100" stroke="#90ee90" stroke-width="3" fill="none"/>
-                                    <path d="M 70 150 Q 100 135 130 150" stroke="#87ceeb" stroke-width="3" fill="none"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="images/service-bonding.jpg" alt="Composite Bonding Treatment" class="treatment-image">
                 </div>
             </div>
 
@@ -362,16 +344,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="treatment-image">
-                        <div class="process-placeholder">
-                            <div class="crown-diagram">
-                                <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M 50 180 L 60 120 L 80 90 L 100 80 L 120 90 L 140 120 L 150 180 Q 100 200 50 180" fill="#daa520" stroke="#1e5a96" stroke-width="2"/>
-                                    <path d="M 50 180 L 150 180 L 150 210 L 50 210 Z" fill="#f0f0f0" stroke="#1e5a96" stroke-width="2"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="images/service-crown.jpg" alt="Crown and Bridge Restoration" class="treatment-image">
                 </div>
             </div>
 
@@ -379,13 +352,33 @@
             <div class="tab-content" id="aligners-tab">
                 <div class="treatment-grid">
                     <div class="treatment-process">
-                        <h3>Invisible Aligners Process</h3>
+                        <h3>Clear Braces Process</h3>
                         <div class="process-steps">
                             <div class="step">
                                 <div class="step-number">1</div>
-                                <h4>3D Scan</h4>
-                                <p>Digital scan of teeth creates 3D model showing complete treatment plan</p>
+                                <h4>Digital Scan</h4>
+                                <p>3D digital scan of your teeth to create a custom treatment plan</p>
                             </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <h4>Custom Aligners</h4>
+                                <p>Series of clear aligners fabricated to gradually shift your teeth</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <h4>Regular Check-ups</h4>
+                                <p>Monthly appointments to monitor progress and receive new aligners</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <h4>Retention</h4>
+                                <p>After treatment, retainers maintain your beautiful new smile</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/service-braces.jpg" alt="Clear Invisible Braces" class="treatment-image">
+                </div>
+            </div>
                             <div class="step">
                                 <div class="step-number">2</div>
                                 <h4>Aligner Creation</h4>
@@ -430,81 +423,49 @@
                 <h2>Before & After Gallery</h2>
                 <p>Real transformations from our satisfied patients</p>
             </div>
-            <div class="photo-gallery">
-                <div class="gallery-item" data-category="before-after">
-                    <div class="gallery-image">
-                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0" y="0" width="150" height="200" fill="#e8d4c0"/>
-                            <rect x="150" y="0" width="150" height="200" fill="#f5ede3"/>
-                            <text x="75" y="100" text-anchor="middle" dominant-baseline="middle" fill="#1e5a96" font-size="24">Before</text>
-                            <text x="225" y="100" text-anchor="middle" dominant-baseline="middle" fill="#1e5a96" font-size="24">After</text>
-                        </svg>
-                    </div>
-                    <h4>Smile Makeover</h4>
-                </div>
-
-                <div class="gallery-item" data-category="implants">
-                    <div class="gallery-image">
-                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="300" height="200" fill="#f0f8ff"/>
-                            <rect x="80" y="60" width="40" height="60" fill="#fffacd" stroke="#1e5a96" stroke-width="2"/>
-                            <rect x="140" y="60" width="40" height="60" fill="#ffffff" stroke="#1e5a96" stroke-width="2"/>
-                            <text x="150" y="130" text-anchor="middle" font-size="14" fill="#1e5a96">Implant Result</text>
-                        </svg>
-                    </div>
-                    <h4>Dental Implant</h4>
-                </div>
-
-                <div class="gallery-item" data-category="whitening">
-                    <div class="gallery-image">
-                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="300" height="200" fill="#fff8dc"/>
-                            <circle cx="75" cy="100" r="35" fill="#f0f0f0" stroke="#1e5a96" stroke-width="2"/>
-                            <circle cx="225" cy="100" r="35" fill="#ffffff" stroke="#1e5a96" stroke-width="2"/>
-                            <text x="150" y="170" text-anchor="middle" font-size="14" fill="#1e5a96">Teeth Whitening</text>
-                        </svg>
-                    </div>
-                    <h4>Whitening Result</h4>
-                </div>
-
-                <div class="gallery-item" data-category="braces">
-                    <div class="gallery-image">
-                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="300" height="200" fill="#f0f8ff"/>
-                            <path d="M 70 100 L 100 80 L 130 100 L 160 80 L 190 100 L 220 80" stroke="#1e5a96" stroke-width="2" fill="none"/>
-                            <path d="M 70 120 L 100 140 L 130 120 L 160 140 L 190 120 L 220 140" stroke="#1e5a96" stroke-width="2" fill="none"/>
-                            <text x="150" y="170" text-anchor="middle" font-size="14" fill="#1e5a96">Orthodontic Treatment</text>
-                        </svg>
-                    </div>
-                    <h4>Aligner Treatment</h4>
-                </div>
-
-                <div class="gallery-item" data-category="cosmetic">
-                    <div class="gallery-image">
-                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="300" height="200" fill="#fffacd"/>
-                            <path d="M 80 120 Q 100 80 120 120 Q 130 140 120 160 Q 100 180 80 160 Q 70 140 80 120" fill="#ffffff" stroke="#1e5a96" stroke-width="2"/>
-                            <path d="M 180 120 Q 200 80 220 120 Q 230 140 220 160 Q 200 180 180 160 Q 170 140 180 120" fill="#ffd700" stroke="#1e5a96" stroke-width="2"/>
-                            <text x="150" y="190" text-anchor="middle" font-size="14" fill="#1e5a96">Cosmetic Enhancement</text>
-                        </svg>
-                    </div>
-                    <h4>Cosmetic Bonding</h4>
-                </div>
-
-                <div class="gallery-item" data-category="restoration">
-                    <div class="gallery-image">
-                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="300" height="200" fill="#f5ede3"/>
-                            <g transform="translate(75, 100)">
-                                <rect x="-30" y="-30" width="25" height="60" fill="#fffacd" stroke="#1e5a96" stroke-width="2"/>
-                                <rect x="5" y="-30" width="25" height="60" fill="#daa520" stroke="#1e5a96" stroke-width="2"/>
-                            </g>
-                            <text x="150" y="170" text-anchor="middle" font-size="14" fill="#1e5a96">Full Mouth Restoration</text>
-                        </svg>
-                    </div>
-                    <h4>Crown & Bridge</h4>
+        <div class="photo-gallery">
+            <div class="gallery-item fade-in" data-category="before-after">
+                <img src="images/gallery-1.jpg" alt="Professional Dental Clinic Reception" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h4>Clinic Reception</h4>
                 </div>
             </div>
+
+            <div class="gallery-item fade-in" data-category="implants">
+                <img src="images/gallery-2.jpg" alt="Professional Dentist at Work" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h4>Expert Treatment</h4>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="whitening">
+                <img src="images/gallery-3.jpg" alt="Dental Equipment and Technology" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h4>Modern Technology</h4>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="braces">
+                <img src="images/gallery-4.jpg" alt="Bright Dental Treatment Room" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h4>Treatment Room</h4>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="cosmetic">
+                <img src="images/gallery-5.jpg" alt="Happy Patient with Beautiful Smile" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h4>Beautiful Results</h4>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="restoration">
+                <img src="images/gallery-6.jpg" alt="Professional Dental Team" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h4>Expert Team</h4>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -580,45 +541,63 @@
             </div>
             <div class="blog-grid">
                 <article class="blog-card fade-in-up">
-                    <div class="blog-date">Jan 15, 2024</div>
-                    <h3>5 Tips for Better Oral Hygiene</h3>
-                    <p>Discover essential habits and techniques to maintain a healthy smile. Learn from our dental experts about daily care routines that prevent cavities and gum disease.</p>
-                    <a href="#" class="read-more">Read Full Article →</a>
+                    <img src="images/blog-1.jpg" alt="Dental Care Tips - Oral Hygiene" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">Jan 15, 2024</div>
+                        <h3>5 Tips for Better Oral Hygiene</h3>
+                        <p>Discover essential habits and techniques to maintain a healthy smile. Learn from our dental experts about daily care routines that prevent cavities and gum disease.</p>
+                        <a href="#" class="read-more">Read Full Article →</a>
+                    </div>
                 </article>
-
+                
                 <article class="blog-card fade-in-up">
-                    <div class="blog-date">Jan 12, 2024</div>
-                    <h3>Dental Implants vs. Traditional Bridges</h3>
-                    <p>Comparing modern implant technology with traditional restoration methods. Understand the benefits, durability, and cost-effectiveness of each approach.</p>
-                    <a href="#" class="read-more">Read Full Article →</a>
+                    <img src="images/blog-2.jpg" alt="Cosmetic Dentistry - Smile Transformation" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">Jan 12, 2024</div>
+                        <h3>Dental Implants vs. Traditional Bridges</h3>
+                        <p>Comparing modern implant technology with traditional restoration methods. Understand the benefits, durability, and cost-effectiveness of each approach.</p>
+                        <a href="#" class="read-more">Read Full Article →</a>
+                    </div>
                 </article>
-
+                
                 <article class="blog-card fade-in-up">
-                    <div class="blog-date">Jan 10, 2024</div>
-                    <h3>Understanding Teeth Sensitivity</h3>
-                    <p>Learn what causes tooth sensitivity and how to treat it. Our specialists explain the underlying causes and recommended treatments for relief.</p>
-                    <a href="#" class="read-more">Read Full Article →</a>
+                    <img src="images/blog-3.jpg" alt="Teeth Alignment - Orthodontic Treatment" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">Jan 10, 2024</div>
+                        <h3>Understanding Teeth Sensitivity</h3>
+                        <p>Learn what causes tooth sensitivity and how to treat it. Our specialists explain the underlying causes and recommended treatments for relief.</p>
+                        <a href="#" class="read-more">Read Full Article →</a>
+                    </div>
                 </article>
-
+                
                 <article class="blog-card fade-in-up">
-                    <div class="blog-date">Jan 8, 2024</div>
-                    <h3>The Benefits of Clear Aligners</h3>
-                    <p>Explore why invisible braces are becoming increasingly popular. Learn about convenience, comfort, and aesthetic advantages compared to traditional braces.</p>
-                    <a href="#" class="read-more">Read Full Article →</a>
+                    <img src="images/service-braces.jpg" alt="Clear Aligners Benefits" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">Jan 8, 2024</div>
+                        <h3>The Benefits of Clear Aligners</h3>
+                        <p>Explore why invisible braces are becoming increasingly popular. Learn about convenience, comfort, and aesthetic advantages compared to traditional braces.</p>
+                        <a href="#" class="read-more">Read Full Article →</a>
+                    </div>
                 </article>
-
+                
                 <article class="blog-card fade-in-up">
-                    <div class="blog-date">Jan 5, 2024</div>
-                    <h3>Cosmetic Dentistry Trends 2024</h3>
-                    <p>Stay updated with the latest cosmetic dentistry trends. From smile design to advanced whitening techniques, discover what's new in aesthetic dentistry.</p>
-                    <a href="#" class="read-more">Read Full Article →</a>
+                    <img src="images/blog-2.jpg" alt="Latest Cosmetic Dentistry Trends" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">Jan 5, 2024</div>
+                        <h3>Cosmetic Dentistry Trends 2024</h3>
+                        <p>Stay updated with the latest cosmetic dentistry trends. From smile design to advanced whitening techniques, discover what's new in aesthetic dentistry.</p>
+                        <a href="#" class="read-more">Read Full Article →</a>
+                    </div>
                 </article>
-
+                
                 <article class="blog-card fade-in-up">
-                    <div class="blog-date">Jan 2, 2024</div>
-                    <h3>Post-Extraction Care Guide</h3>
-                    <p>Essential aftercare instructions following tooth extraction. Follow our expert guidance to ensure proper healing and minimize complications.</p>
-                    <a href="#" class="read-more">Read Full Article →</a>
+                    <img src="images/clinic-interior.jpg" alt="Post-Extraction Care Guide" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">Jan 2, 2024</div>
+                        <h3>Post-Extraction Care Guide</h3>
+                        <p>Essential aftercare instructions following tooth extraction. Follow our expert guidance to ensure proper healing and minimize complications.</p>
+                        <a href="#" class="read-more">Read Full Article →</a>
+                    </div>
                 </article>
             </div>
         </div>
@@ -810,6 +789,6 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
